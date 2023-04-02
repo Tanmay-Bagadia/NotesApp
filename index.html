@@ -21,15 +21,19 @@
     </header>
 
     <!-- Notes -->
-    <div class="notes-cont">
+    <div class="notes-area">
+      <input type="text" class="title-input" placeholder="Title here" />
       <textarea
         name="notes-input"
         id="notes-input"
         cols="30"
         rows="10"
+        placeholder="Type your note here"
       ></textarea>
-      <button class="addBtn">Add</button>
+      <button class="addBtn" onclick="createNote()">Add</button>
     </div>
+
+    <div class="notes-cont"></div>
 
     <!-- ABOUT
     <section id="About">

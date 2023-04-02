@@ -46,7 +46,7 @@ a:hover {
   border-bottom-right-radius: 5px;
 }
 /* NOTES  */
-.notes-cont {
+.notes-area {
   display: flex;
   justify-content: center;
   margin-top: 20%;
@@ -56,8 +56,49 @@ textarea {
   width: 60%;
   height: auto;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: monospace;
 }
 
+.notes {
+  font-size: 1.2rem;
+  min-width: 40%;
+  max-width: 60%;
+  height: auto;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.title-input {
+  position: absolute;
+  display: flex;
+  padding: 20px;
+  top: 25%;
+  width: 60%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  font-family: monospace;
+  word-wrap: normal;
+}
+
+.heading {
+  text-align: center;
+}
+
+.notePara {
+  color: rgb(48, 48, 48);
+  text-align: center;
+}
+
+.notes-cont {
+  width: 100%;
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
+}
 /* Add Button */
 .addBtn {
   padding: 15px;
