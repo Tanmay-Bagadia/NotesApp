@@ -18,11 +18,19 @@ textarea {
 
 .notes {
   font-size: 1.2rem;
+  display: grid;
+  grid-template-rows: auto auto auto;
   min-width: 40%;
-  max-width: 60%;
   height: auto;
   padding: 10px;
   margin: 10px;
+
+  background-image: linear-gradient(
+    95.2deg,
+    rgba(173, 252, 234, 1) 26.8%,
+    rgba(192, 229, 246, 1) 64%
+  );
+
   border: 1px solid black;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -40,12 +48,20 @@ textarea {
 }
 
 .heading {
-  text-align: center;
+  color: rgb(81, 33, 125);
+  text-align: justify;
 }
 
 .notePara {
-  color: rgb(48, 48, 48);
-  text-align: center;
+  color: rgb(46, 79, 65);
+  text-align: justify;
+  font-size: 1.5rem;
+}
+.delBtn {
+  padding: 15px;
+  font-size: 1.25rem;
+  background-color: #dc6e53;
+  border-radius: 5px;
 }
 
 .notes-cont {
@@ -62,4 +78,12 @@ textarea {
   font-size: 1.5rem;
   background-color: #53d2dc;
   border-radius: 5px;
+}
+
+.addBtn:hover {
+  color: rgb(205, 59, 59);
+  font-size: 1.75rem;
+  font-weight: bold;
+  background-color: rgb(255, 149, 0);
+  box-shadow: 0 5px 5px rgb(171, 210, 213);
 }
